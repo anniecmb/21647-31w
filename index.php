@@ -20,7 +20,7 @@
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); // permet de récupérer l'enregistrement global du post = objet php qui contient toute la structure de l'enregistrement
-                the_title('<h1>', '</h1>'); // extraire le titre à partir de l'enresgistrement
+                the_title('<h2>', '</h2>'); // extraire le titre à partir de l'enresgistrement
                 the_content(); // extraire le contenu à partir de l'enresgistrement
             endwhile;
         endif;
