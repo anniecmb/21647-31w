@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: A22-31W-ACMB
 Theme URI: http://underscores.me/
@@ -12,6 +13,9 @@ License URI: LICENSE
 Text Domain: 31w
 */
 /*--------------------------------------------------------------*/
+/*----- Couleurs d'arrière-plan des titres ----- */
+/*----- Couleurs des titres ----- */
+/*----- Couleurs des liens ----- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -357,4 +361,20 @@ h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(225, 0, 255);
   text-decoration: underline wavy;
+}
+
+small, pre, code {
+  background-color: rgb(255, 174, 174);
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+}
+
+code {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+span {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */

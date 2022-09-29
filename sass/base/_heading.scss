@@ -1,9 +1,9 @@
 h1 {
-    font-family: $police__titre-principal;
+    font-family: $police__titre--principal;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: $police__titre-secondaire;
-    color: $couleur__titre-secondaire;
-    text-decoration: $police__titre-secondaire-souligne;
+    font-family: $police__titre--secondaire;
+    color: $couleur__titre--secondaire;
+    text-decoration: $police__titre--secondaire--souligne;
 }
