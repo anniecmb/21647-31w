@@ -20,3 +20,28 @@ a {
 		outline: 0;
 	}
 }
+
+// pour ajouter des couleurs des liens du aside en changeant les noms des variables ex: $couleur__link__aside
+.menu__aside a {
+
+	color: $couleur__link__aside;
+
+	&:visited {
+		color: $couleur__link__aside--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur__link__aside--hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
