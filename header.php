@@ -39,6 +39,7 @@
 		<!-- affichage du menu principal -->
 		<?php wp_nav_menu(array(
 			"menu" => "primaire",
-			"container" => "nav")); ?>
+			"container" => "nav",
+			"container_class" => "menu__primaire")); ?>
 
 	</header><!-- #masthead -->
