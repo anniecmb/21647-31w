@@ -71,3 +71,21 @@ function mon_31w_register_nav_menu(){
 	) );
 }
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
+
+
+
+
+// pour filtre chacun des éléments du menu
+function igc31w_filtre_choix_menu($obj_menu){
+    //var_dump($obj_menu);
+    foreach($obj_menu as $cle => $value)
+    {
+       // print_r($value);
+       //$value->title = substr($value->title,0,7);
+       $value->title = wp_trim_words($value->title,3,"..."); // garder trois premiers mots dans les liens des menus
+       // echo $value->title . '<br>';
+ 
+    }
+    return $obj_menu;
+}
+add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
