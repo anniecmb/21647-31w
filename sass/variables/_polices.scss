@@ -1,5 +1,19 @@
+/*----- Polices générales ----- */
+
 $police__main : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+/*----- Polices des titres ----- */
+
 $police__titre--principal : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $police__titre--secondaire : Verdana, Geneva, Tahoma, sans-serif;
 
 $police__titre--secondaire--souligne : underline wavy;
+
+
+/*----- Polices simples ----- */
+
+$font__pre: 'Courier New', Courier, monospace;
+$font__line-height-pre: .8em;
+$font__code: 'Courier New', Courier, monospace;
+
