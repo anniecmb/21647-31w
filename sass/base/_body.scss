@@ -1,9 +1,11 @@
 body {
     background-color: $couleur__background--body;
+    margin: 100px 50px;
 }
 
 main {
     font-family: $police__main;
+    // text-align: center;
 }
 
 p {
