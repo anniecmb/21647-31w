@@ -1,0 +1,27 @@
+// nav
+.menu__primaire {
+    background-color: #000;
+    // ul
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    // li
+    .menu-item {
+
+    }
+    a {
+        text-decoration: none;
+        background-color: #000;
+        color: fuchsia;
+        padding: 10px;
+    }
+} // fin .menu__principal
+
+// Transformation en CSS
+
+// .menu-primaire-container {}
+// .menu-primaire-container .menu {}
+// .menu-primaire-container .menu .menu-item {}
+// .menu-primaire-container .menu a {}
