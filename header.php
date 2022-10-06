@@ -44,4 +44,6 @@
 
 	</header><!-- #masthead -->
 
-	
+	<aside class="widget__area">
+
+	</aside>
