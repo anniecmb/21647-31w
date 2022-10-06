@@ -1,8 +1,8 @@
-$couleur__background--body : rgb(255, 217, 0);
+$couleur__background--body : rgb(221, 255, 242);
 
-$couleur__titre--secondaire : rgb(225, 0, 255);
+$couleur__titre--secondaire : rgb(0, 255, 128);
 
-$couleur__texte : rgb(0, 255, 234);
+$couleur__texte : rgb(0, 0, 0);
 
 
 /*----- Couleurs d'arrière-plan des titres ----- */
@@ -23,6 +23,37 @@ $couleur__code : #bbb;
 
 /*----- Couleurs des liens ----- */
 
-$couleur__link: #55f;
-$couleur__link--hover: #3f3;
-$couleur__link--visited: #8f8;
+$couleur__link: rgb(91, 255, 85);
+$couleur__link--hover: rgb(153, 255, 85);
+$couleur__link--visited: rgb(91, 255, 85);
+
+
+/*----- Couleurs des boutons ----- */
+
+$color__border-button: #999;
+$color__background-button: #bbb;
+$color__border-button-hover: #aaa;
+$color__border-button-focus: #888;
+
+
+/*----- Couleurs des champs ----- */
+
+$color__text-input: #444;
+$color__border-input: #777;
+$color__text-input-focus: #333;
+
+
+/*----- Couleurs des lignes horizontales ----- */
+
+$color__background-hr: rgb(161, 188, 226);
+
+
+/*----- Couleurs simples ----- */
+
+$color__background-pre: rgb(158, 213, 196);
+$color__border-abbr: #aaa;
+
+
+/*----- Couleurs ins ----- */
+
+$color__background-ins: #ddd;
