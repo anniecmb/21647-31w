@@ -1,0 +1,24 @@
+.menu__aside {
+
+    display: flex;
+
+    .menu {
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    // .menu-item classe par défaut de wordpress donc pas de double barre en bas
+    .menu-item {
+    }
+
+    a {
+        
+    }
+}
+
+// .menu__aside {}
+// .menu__aside .menu {}
+// .menu__aside .menu-item {}
+// .menu__aside a {}
