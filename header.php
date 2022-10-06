@@ -45,5 +45,5 @@
 	</header><!-- #masthead -->
 
 	<aside class="widget__area">
-
+		<h2>Menu secondaire</h2>
 	</aside>
