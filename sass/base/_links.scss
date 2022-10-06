@@ -1,5 +1,6 @@
 a {
 	color: $couleur__link;
+	text-decoration: none;
 
 	&:visited {
 		color: $couleur__link--visited;
