@@ -1,23 +1,28 @@
 // nav
 .menu__primaire {
-    background-color: #000;
+
+    background-color: $couleur__nav--primaire;
+    padding: 20px;
+    font-family: $police__main;
+
     // ul
     .menu {
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
+        padding: 0px;
     }
+
     // li
     .menu-item {
 
     }
     a {
-        text-decoration: none;
-        background-color: #000;
-        color: fuchsia;
-        padding: 10px;
+        color: white;
+        margin: 0;
     }
 } // fin .menu__principal
+
 
 // Transformation en CSS
 
