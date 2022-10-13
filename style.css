@@ -14,8 +14,18 @@ Text Domain: 31w
 */
 /*--------------------------------------------------------------*/
 /*----- Couleurs d'arrière-plan des titres ----- */
+/*----- Couleurs d'arrière-plan des titres ----- */
 /*----- Couleurs des titres ----- */
 /*----- Couleurs des liens ----- */
+/*----- Couleurs des liens aside ----- */
+/*----- Couleurs des boutons ----- */
+/*----- Couleurs des champs ----- */
+/*----- Couleurs des lignes horizontales ----- */
+/*----- Couleurs simples ----- */
+/*----- Couleurs ins ----- */
+/*----- Polices générales ----- */
+/*----- Polices des titres ----- */
+/*----- Polices simples ----- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -338,7 +348,8 @@ html {
 }
 
 body {
-  background-color: rgb(255, 217, 0);
+  background-color: rgb(221, 255, 242);
+  margin: 100px 50px;
 }
 
 main {
@@ -346,7 +357,7 @@ main {
 }
 
 p {
-  color: rgb(0, 255, 234);
+  color: rgb(0, 0, 0);
 }
 
 .trace {
@@ -359,22 +370,267 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(225, 0, 255);
+  color: rgb(0, 255, 128);
   text-decoration: underline wavy;
 }
 
-small, pre, code {
-  background-color: rgb(255, 174, 174);
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
 }
 
 pre {
+  background: rgb(158, 213, 196);
+  font-family: "Courier New", Courier, monospace;
+  line-height: 0.8em;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
   font-family: "Courier New", Courier, monospace;
 }
 
-code {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+abbr,
+acronym {
+  border-bottom: 1px dotted #aaa;
+  cursor: help;
 }
 
-span {
-  margin: 0 10px;
+mark,
+ins {
+  background: #ddd;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+a {
+  color: rgb(91, 255, 85);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(91, 255, 85);
+}
+a:hover, a:focus, a:active {
+  color: rgb(153, 255, 85);
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+.menu__aside a {
+  color: rgb(0, 68, 255);
+}
+.menu__aside a:visited {
+  color: rgb(77, 88, 255);
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: rgb(56, 69, 255);
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
+  outline: 0;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: 1px solid;
+  border-color: #999;
+  border-radius: 3px;
+  background: #bbb;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+button:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+  border-color: #aaa;
+}
+button:active, button:focus,
+input[type=button]:active,
+input[type=button]:focus,
+input[type=reset]:active,
+input[type=reset]:focus,
+input[type=submit]:active,
+input[type=submit]:focus {
+  border-color: #888;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+  color: #444;
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=range]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+textarea:focus {
+  color: #333;
+}
+
+select {
+  border: 1px solid #777;
+}
+
+textarea {
+  width: 100%;
+}
+
+hr {
+  background-color: rgb(161, 188, 226);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+.menu__primaire {
+  background-color: rgb(0, 255, 115);
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.menu__primaire .menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+.menu__primaire a {
+  color: white;
+  margin: 0;
+}
+
+.menu__aside {
+  display: flex;
+}
+.menu__aside .menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.site {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header {
+  grid-area: header;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget__area {
+  grid-area: sidebar;
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
 }/*# sourceMappingURL=style.css.map */
