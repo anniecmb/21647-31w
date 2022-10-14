@@ -606,12 +606,6 @@ figure {
   padding: 0;
   margin: 0;
 }
-.site {
-  display: grid;
-  grid-template-columns: 25% auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
-}
-
 .site__header {
   grid-area: header;
 }
@@ -629,8 +623,14 @@ figure {
   grid-area: footer;
 }
 
-.no-sidebar .site {
+.site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
