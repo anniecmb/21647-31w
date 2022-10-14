@@ -20,6 +20,7 @@
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-areas:
+		"sidebar"
 		"header"
 		"main"
 		"footer";
