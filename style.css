@@ -606,6 +606,16 @@ figure {
   padding: 0;
   margin: 0;
 }
+.site__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.site__footer div {
+  border: 1px solid black;
+  flex: 1;
+}
+
 .site__header {
   grid-area: header;
 }
