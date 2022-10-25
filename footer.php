@@ -11,8 +11,11 @@
 
 ?>
 
-	<footer>
-        <p>Mon pied de page</p>
+	<footer class="site__footer">
+		<div><?php get_sidebar( 'footer-1' ); ?></div>
+		<div><?php get_sidebar( 'footer-2' ); ?></div>
+		<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore, aspernatur nisi quisquam earum, itaque aliquam molestiae veritatis nesciunt facere id. Voluptatum optio minima fugit minus, doloremque vero harum sapiente!</div>
+		<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolore, aspernatur nisi quisquam earum, itaque aliquam molestiae veritatis nesciunt facere id. Voluptatum optio minima fugit minus, doloremque vero harum sapiente!</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
