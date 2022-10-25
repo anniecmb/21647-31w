@@ -1,0 +1,9 @@
+.site__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.site__footer div {
+    border: 1px solid black;
+    flex: 1;
+}
