@@ -1,11 +1,12 @@
 body {
-    background-color: $couleur__background--body;
-    margin: 100px 50px;
+    // background-color: $couleur__background--body;
+    margin: 0;
 }
 
 main {
     font-family: $police__main;
-    // text-align: center;
+    margin-right: $margin__body;
+    margin-bottom: $margin__body;
 }
 
 p {

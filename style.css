@@ -348,12 +348,13 @@ html {
 }
 
 body {
-  background-color: rgb(221, 255, 242);
-  margin: 100px 50px;
+  margin: 0;
 }
 
 main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 p {
@@ -434,7 +435,7 @@ a:visited {
   color: rgb(91, 255, 85);
 }
 a:hover, a:focus, a:active {
-  color: rgb(153, 255, 85);
+  color: rgb(70, 204, 85);
 }
 a:focus {
   outline: thin dotted;
@@ -444,13 +445,13 @@ a:hover, a:active {
 }
 
 .menu__aside a {
-  color: rgb(0, 68, 255);
+  color: black;
 }
 .menu__aside a:visited {
-  color: rgb(77, 88, 255);
+  color: black;
 }
 .menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
-  color: rgb(56, 69, 255);
+  color: white;
 }
 .menu__aside a:focus {
   outline: thin dotted;
@@ -598,6 +599,17 @@ figure {
   margin: 0;
 }
 
+aside {
+  margin-inline: 50px;
+  margin-bottom: 50px;
+  padding-inline: 25px;
+  background-color: rgb(0, 255, 128);
+}
+
+aside h2 {
+  color: white;
+}
+
 .menu__aside {
   display: flex;
 }
@@ -606,6 +618,19 @@ figure {
   padding: 0;
   margin: 0;
 }
+
+.site__branding {
+  text-align: center;
+}
+
+.site__title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.site__description {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-around;
