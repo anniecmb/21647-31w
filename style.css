@@ -604,6 +604,7 @@ aside {
   margin-bottom: 50px;
   padding-inline: 25px;
   background-color: rgb(0, 255, 128);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 aside h2 {
@@ -612,6 +613,7 @@ aside h2 {
 
 .menu__aside {
   display: flex;
+  margin-bottom: 50px;
 }
 .menu__aside .menu {
   list-style-type: none;
@@ -628,6 +630,10 @@ aside h2 {
 }
 
 .site__description {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
