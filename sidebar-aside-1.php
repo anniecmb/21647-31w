@@ -1,3 +1,3 @@
-<div id="sidebar-acmb-aside-1" class="sidebar">
-	<?php dynamic_sidebar( 'acmb-aside-1' ); ?>
+<div id="sidebar-aside-1" class="sidebar">
+	<?php dynamic_sidebar( 'aside-1' ); ?>
 </div>
