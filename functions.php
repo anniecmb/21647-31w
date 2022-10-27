@@ -151,4 +151,20 @@ function my_register_sidebars() {
 		)
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
+
+
+
+	/* Register the 'aside-1' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'Sidebar - aside-1' ),
+			'description'   => __( 'Deuxième sidebar du footer.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
 }
