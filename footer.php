@@ -12,10 +12,10 @@
 ?>
 
 	<footer class="site__footer">
-		<div><?php get_sidebar( 'footer-1' ); ?></div>
-		<div><?php get_sidebar( 'footer-2' ); ?></div>
-		<div><?php get_sidebar( 'footer-3' ); ?></div>
-		<div><?php get_sidebar( 'footer-4' ); ?></div>
+		<div><?php get_sidebar( 'footer-1-acmb' ); ?></div>
+		<div><?php get_sidebar( 'footer-2-acmb' ); ?></div>
+		<div><?php get_sidebar( 'footer-3-acmb' ); ?></div>
+		<div><?php get_sidebar( 'footer-4-acmb' ); ?></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

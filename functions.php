@@ -94,11 +94,11 @@ add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu", 10, 2);
 
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
-	/* Register the 'footer-1' sidebar. */
+	/* Register the 'footer-1-acmb' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-1',
-			'name'          => __( 'Sidebar - footer-1' ),
+			'id'            => 'footer-1-acmb',
+			'name'          => __( 'Sidebar - footer-1-acmb' ),
 			'description'   => __( 'Premier sidebar du footer.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
@@ -109,11 +109,11 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 
 	
-	/* Register the 'footer-2' sidebar. */
+	/* Register the 'footer-2-acmb' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-2',
-			'name'          => __( 'Sidebar - footer-2' ),
+			'id'            => 'footer-2-acmb',
+			'name'          => __( 'Sidebar - footer-2-acmb' ),
 			'description'   => __( 'Deuxième sidebar du footer.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
@@ -123,11 +123,11 @@ function my_register_sidebars() {
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 
-	/* Register the 'footer-3' sidebar. */
+	/* Register the 'footer-3-acmb' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-3',
-			'name'          => __( 'Sidebar - footer-3' ),
+			'id'            => 'footer-3-acmb',
+			'name'          => __( 'Sidebar - footer-3-acmb' ),
 			'description'   => __( 'Troisième sidebar du footer.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
@@ -138,11 +138,11 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 
 
-	/* Register the 'footer-4' sidebar. */
+	/* Register the 'footer-4-acmb' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-4',
-			'name'          => __( 'Sidebar - footer-4' ),
+			'id'            => 'footer-4-acmb',
+			'name'          => __( 'Sidebar - footer-4-acmb' ),
 			'description'   => __( 'Quatrième sidebar du footer.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
@@ -154,11 +154,11 @@ function my_register_sidebars() {
 
 
 
-	/* Register the 'aside-1' sidebar. */
+	/* Register the 'aside-1-acmb' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'aside-1',
-			'name'          => __( 'Sidebar - aside-1' ),
+			'id'            => 'aside-1-acmb',
+			'name'          => __( 'Sidebar - aside-1-acmb' ),
 			'description'   => __( 'Deuxième sidebar du footer.' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
