@@ -3,6 +3,7 @@ aside {
     margin-bottom: $margin__aside;
     padding-inline: $margin__aside--petit;
     background-color: $couleur__titre--secondaire;
+    font-family: $police__main;
 }
 
 aside h2 {
@@ -12,6 +13,7 @@ aside h2 {
 .menu__aside {
 
     display: flex;
+    margin-bottom: $margin__aside;
 
     .menu {
         list-style-type: none;
