@@ -73,22 +73,21 @@ function mon_31w_register_nav_menu(){
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
+function igc31w_filtre_choix_menu($obj_menu, $arg) {
 
-
-// pour filtre chacun des éléments du menu
-function igc31w_filtre_choix_menu($obj_menu){
-    //var_dump($obj_menu);
-    foreach($obj_menu as $cle => $value)
-    {
-       // print_r($value);
-       //$value->title = substr($value->title,0,7);
-       $value->title = wp_trim_words($value->title,3,"..."); // garder trois premiers mots dans les liens des menus
-       // echo $value->title . '<br>';
- 
-    }
-    return $obj_menu;
+	if ($arg->menu == "aside") {
+		foreach ($obj_menu as $cle => $value) {
+			$value->title = substr($value->title,7);
+			$value->title = explode("(",$value->title);
+			unset($value->title[1]);
+			$value->title = implode($value->title);
+			$value->title = wp_trim_words($value->title, 3, "...");
+		}
+	}
+	return $obj_menu;
 }
-add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+
+add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu", 10, 2);
 
 
 /* ---------- Initialisation des sidebar ---------- */
