@@ -27,7 +27,6 @@
                 <?php the_content(null, true); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
-            
         </main>    
 <?php get_footer(); ?>
 </html>
