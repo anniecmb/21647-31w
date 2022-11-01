@@ -13,3 +13,7 @@ Sur le cours 582-1M1 Création vidéo (75h), on retrouve un carrousel de cinq im
 Tout en bas de la page, le pied de page contient quatre widgets (menu de navigation avec des liens utiles, une image, une citation et un bouton "Contactez-nous").
 
 #### Exercice 3
+Objectifs:
+- Ajouter, gérer et utiliser des champs personnalisés
+- Adapter le menu aside pour qu'il soit adaptatif
+- Déployer le projet sur le serveur Siteground
