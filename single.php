@@ -13,6 +13,15 @@
  * @package underscore
  */
 ?>
+
+<?php
+function filtre_titre_cours($chaine) {
+    $titre = substr($chaine,7);
+    $titre = substr($titre, 0, strpos($titre, "("));
+return $titre;
+}
+?>
+
 <!-- <h1 class="trace">single.php</h1> -->
 <?php get_header(); ?>
 
@@ -21,8 +30,10 @@
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); 
-                the_title('<h2>','</h2>');
-                the_content(null, true); ?>
+                the_title('<h2>','</h2>'); ?>
+                <h2><?php echo filtre_titre_cours(get_the_title()) ?></h2>
+                <h3>Durée du cours: <?php the_field('duree') ?>h</h3>
+                <?php the_content(null, true); ?>
                 <section>
                     <small>
                         <span>
