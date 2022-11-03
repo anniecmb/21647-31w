@@ -48,13 +48,18 @@
 
 	</header><!-- #masthead -->
 
+	<!-- <aside class="widget__area"> -->
 	<aside class="site__menu">
-		<h2>Menu secondaire</h2>
+		<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+		<label class="burger" for="chk-burger">&#11142;</label>
+		<!-- <h2>Menu secondaire</h2> -->
 		<?php wp_nav_menu(array(
 			"menu" => "aside",
 			"container" => "nav",
 			"container_class" => "menu__aside")); ?>
-
+		
+	</aside>
+	
+	<aside class="site__sidebar">
 		<div><?php get_sidebar( 'aside-1-acmb' ); ?></div>
-
 	</aside>
