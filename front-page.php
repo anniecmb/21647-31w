@@ -33,7 +33,15 @@ return $titre;
                 // the_title('<h2>','</h2>');?>
                 <h2><a href="<?php the_permalink() ?>">
                 <?php echo filtre_titre_cours(get_the_title()) ?></a></h2>
-                <?php the_title() ?></a></h2>
+                <h3>Sigle du cours: <?php the_field('sigle') ?>h</h3>
+                <h3>Professeur: <?php the_field('professeur'); ?></h3>
+                <h4>Durée du cours: <?php the_field('duree') ?>h</h4>
+                <h4>Suis-je inscris à ce cours: <?php
+                    if( get_field('je_participe') ) {
+                        echo "Oui";
+                    } else {
+                        echo "Non";
+                    }?></h4>
                 <?php the_content(null, true); ?>
                 <?php endwhile; ?>
             <?php endif; ?>
