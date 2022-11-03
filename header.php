@@ -48,7 +48,6 @@
 
 	</header><!-- #masthead -->
 
-	<!-- <aside class="widget__area"> -->
 	<aside class="site__menu">
 		<h2>Menu secondaire</h2>
 		<?php wp_nav_menu(array(
