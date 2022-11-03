@@ -14,6 +14,10 @@ Tout en bas de la page, le pied de page contient quatre widgets (menu de navigat
 
 #### Exercice 3
 Objectifs:
-- Ajouter, gérer et utiliser des champs personnalisés
+- Ajouter, gérer et utiliser les champs personnalisés suivants:
+    - Sigle du cours
+    - Professeur
+    - Durée du cours
+    - Statut d'inscription
 - Adapter le menu aside pour qu'il soit adaptatif
 - Déployer le projet sur le serveur Siteground
