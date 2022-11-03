@@ -30,11 +30,11 @@ return $titre;
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); 
-                // the_title('<h2>','</h2>');
+                the_title('<h2>','</h2>');
                 ?>
-                <h2><?php echo filtre_titre_cours(get_the_title()) ?></h2>
+                <!-- <h2><?php echo filtre_titre_cours(get_the_title()) ?></h2> -->
 
-                <h3>Sigle du cours: <?php the_field('sigle') ?>h</h3>
+                <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
                 <h3>Professeur: <?php the_field('professeur'); ?></h3>
                 <h4>Durée du cours: <?php the_field('duree') ?>h</h4>
                 <h4>Suis-je inscris à ce cours: <?php
