@@ -30,7 +30,7 @@ return $titre;
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); // récupère l'enregistrement complet (page ou article)
-                the_title('<h2>','</h2>');?>
+                // the_title('<h2>','</h2>');?>
                 <h2><a href="<?php the_permalink() ?>">
                 <?php echo filtre_titre_cours(get_the_title()) ?></a></h2>
                 <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
