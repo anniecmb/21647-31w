@@ -1,9 +1,48 @@
+.site__menu {
+    position: relative;
+    min-width: fit-content;
+}
+  
+.chk-burger {
+    display: none;
+}
+  
+.chk-burger:checked ~ .burger {
+    transform: rotate(90deg);
+}
+  
+.chk-burger:checked ~ .menu__aside {
+    transform: translateX(0);
+}
+
+.burger {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 10px;
+    left: 10px;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+
+    @media screen and (max-width: 700px) {
+        display: inline;
+    }
+}
+
 aside {
     margin-inline: $margin__aside;
-    margin-bottom: $margin__aside;
-    padding-inline: $margin__aside--petit;
+    // margin-bottom: $margin__aside;
+    padding: $margin__aside--petit;
     background-color: $couleur__titre--secondaire;
     font-family: $police__main;
+
+    @media screen and (max-width: 700px) {
+        margin-inline: 0;
+        margin-bottom: 0;
+    }
 }
 
 aside h2 {
@@ -14,6 +53,27 @@ aside h2 {
 
     display: flex;
     margin-bottom: $margin__aside;
+
+    position: absolute;
+    width: 50vw;
+    top: 60px;
+    left: 0;
+    transform: translateX(-120vw);
+    transition: transform 0.5s;
+    background-color: $couleur__titre--secondaire;
+    
+    @media screen and (min-width: 700px) {
+        position: static;
+        transform: translateX(0);
+        width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+        margin-inline: 0;
+        margin-bottom: 0;
+        padding: $margin__aside--petit;
+        width: 100%;
+    }
 
     .menu {
         list-style-type: none;
