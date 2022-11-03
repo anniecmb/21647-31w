@@ -20,6 +20,11 @@ function filtre_titre_cours($chaine) {
     $titre = substr($titre, 0, strpos($titre, "("));
 return $titre;
 }
+
+function filtre_description_cours($chaine) {
+    $titre = wp_trim_words($chaine, 20, "...");
+return $titre;
+}
 ?>
 
 <!-- <h1 class="trace">front-page.php</h1> -->
@@ -42,7 +47,8 @@ return $titre;
                     } else {
                         echo "Non";
                     }?></h4>
-                <?php the_content(null, true); ?>
+                <!-- <?php the_content(null, true); ?> -->
+                <?php echo filtre_description_cours(get_the_content()) ?>
                 <?php endwhile; ?>
             <?php endif; ?>
         </main>    
