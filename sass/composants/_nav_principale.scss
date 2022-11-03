@@ -11,6 +11,17 @@
         display: flex;
         justify-content: space-evenly;
         padding: 0px;
+
+        @media screen and (max-width: 700px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .menu>li {
+        @media screen and (max-width: 700px) {
+            padding-bottom: 20px;
+        }
     }
 
     a {
