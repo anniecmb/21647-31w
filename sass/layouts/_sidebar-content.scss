@@ -18,11 +18,20 @@
 .site__sidebar {
 	grid-area: sidebar;
 	min-width: 230px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .site__sidebar>div {
 	min-width: 230px;
 	max-width: 230px;
+	
+	@media screen and (max-width: 700px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .site__footer {
