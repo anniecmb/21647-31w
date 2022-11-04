@@ -609,6 +609,14 @@ figure {
     text-align: center;
   }
 }
+.menu__primaire .menu > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  padding-inline: 10px;
+}
 @media screen and (max-width: 700px) {
   .menu__primaire .menu > li {
     padding-bottom: 20px;
@@ -659,6 +667,7 @@ aside {
   padding: 25px;
   background-color: rgb(0, 255, 128);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  box-sizing: content-box;
 }
 @media screen and (max-width: 700px) {
   aside {
@@ -675,18 +684,17 @@ aside h2 {
   display: flex;
   margin-bottom: 50px;
   position: absolute;
-  width: 50vw;
   top: 60px;
   left: 0;
   transform: translateX(-120vw);
   transition: transform 0.5s;
   background-color: rgb(0, 255, 128);
+  min-width: 230px;
 }
 @media screen and (min-width: 700px) {
   .menu__aside {
     position: static;
     transform: translateX(0);
-    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -701,6 +709,9 @@ aside h2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+.menu__aside .menu .menu-item {
+  padding-block: 8px;
 }
 
 .site__branding {
@@ -721,12 +732,21 @@ footer {
 
 .site__footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.site__footer div {
-  padding-inline: 10px;
+.site__footer > div {
+  padding: 10px;
+  display: flex;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.site__footer > div * {
+  padding: 0;
+  margin: 0;
 }
 
 .site__header {
@@ -749,6 +769,12 @@ footer {
 
 .site__sidebar {
   grid-area: sidebar;
+  min-width: 230px;
+}
+
+.site__sidebar > div {
+  min-width: 230px;
+  max-width: 230px;
 }
 
 .site__footer {
@@ -756,7 +782,10 @@ footer {
 }
 @media screen and (max-width: 700px) {
   .site__footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
