@@ -4,10 +4,19 @@ footer {
 
 .site__footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.site__footer div {
-    padding-inline: 10px;
+.site__footer>div {
+    padding: 10px;
+    display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.site__footer>div * {
+    padding: 0;
+    margin: 0;
 }
