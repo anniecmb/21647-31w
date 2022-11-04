@@ -553,11 +553,11 @@ hr {
 }
 
 ul {
-  list-style: disc;
+  list-style: none;
 }
 
 ol {
-  list-style: decimal;
+  list-style: none;
 }
 
 li > ul,
@@ -703,6 +703,10 @@ aside h2 {
     margin-bottom: 0;
     padding: 25px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 .menu__aside .menu {
@@ -770,11 +774,21 @@ footer {
 .site__sidebar {
   grid-area: sidebar;
   min-width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site__sidebar > div {
   min-width: 230px;
   max-width: 230px;
+}
+@media screen and (max-width: 700px) {
+  .site__sidebar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .site__footer {
