@@ -17,13 +17,23 @@
 
 .site__sidebar {
 	grid-area: sidebar;
+	min-width: 230px;
+}
+
+.site__sidebar>div {
+	min-width: 230px;
+	max-width: 230px;
 }
 
 .site__footer {
 	grid-area: footer;
 
 	@media screen and (max-width: 700px) {
-		display: block;
+		// display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
