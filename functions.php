@@ -73,6 +73,10 @@ function mon_31w_register_nav_menu(){
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 
+/**
+ * Filtre du menu aside
+ * @arg $obj_menu, $arg
+ */
 function igc31w_filtre_choix_menu($obj_menu, $arg) {
 
 	if ($arg->menu == "aside") {
@@ -86,8 +90,29 @@ function igc31w_filtre_choix_menu($obj_menu, $arg) {
 	}
 	return $obj_menu;
 }
-
 add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu", 10, 2);
+
+
+
+/**
+ * Filtre du menu evenement
+ * @arg string $item_output		string représentant l'élément du menu
+ * @arg obj $item				element du menu
+ */
+function prefix_nav_description( $item_output, $item) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( '</a>',
+        // '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+              $item_output );
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+// l'argument 10 : niveau de privilège
+// l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
+
+
 
 
 /* ---------- Initialisation des sidebar ---------- */
@@ -168,3 +193,17 @@ function my_register_sidebars() {
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
+
+
+
+/**
+ *	La fonction permettra de modifier la requête principale de WordPress (main query)
+ *	Les articles qui s'afficheront dans le page d'accueil seront les articles de catégorie « accueil »
+ *
+ */
+function igc_31w_filtre_requete( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'category_name', 'accueil' );
+	}
+}
+add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
