@@ -1,11 +1,11 @@
 .liste {
-    display: block;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .liste__cours {
-    flex: 0 1;
+    flex: 0 1 30%;
 }
 
