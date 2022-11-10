@@ -31,11 +31,13 @@ return $titre;
 <?php get_header(); ?>
 
     <main class="site__main">
+        <section class="liste">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); // récupère l'enregistrement complet (page ou article)
                 // the_title('<h2>','</h2>');?>
+                <article class="liste__cours">
                 <h2><a href="<?php the_permalink() ?>">
                 <?php echo filtre_titre_cours(get_the_title()) ?></a></h2>
                 <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
@@ -49,8 +51,10 @@ return $titre;
                     }?></h4>
                 <!-- <?php the_content(null, true); ?> -->
                 <?php echo filtre_description_cours(get_the_content()) ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
+                </article>
+            <?php endwhile; ?>
+        <?php endif; ?>
+            </section>
         </main>    
 <?php get_footer(); ?>
 </html>
