@@ -1,0 +1,11 @@
+.liste {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.liste__cours {
+    flex: 0 1;
+}
+
