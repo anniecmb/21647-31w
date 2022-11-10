@@ -753,6 +753,33 @@ footer {
   margin: 0;
 }
 
+.menu__evenement {
+  border: 1px solid black;
+}
+
+.menu__evenement .menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.menu__item__icone {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.liste {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.liste__cours {
+  flex: 0 1;
+}
+
 .site__header {
   grid-area: header;
 }
