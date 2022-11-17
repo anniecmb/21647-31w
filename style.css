@@ -597,14 +597,20 @@ figure {
   align-items: center;
   padding-bottom: 20px;
 }
-.thumbnail img {
-  padding-right: 20px;
+.thumbnail div {
+  padding-inline: 20px;
 }
 
 .menu__primaire {
   background-color: rgb(0, 255, 115);
-  padding: 20px;
+  padding: 20px 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__primaire .logo * {
+  max-height: 100px;
+  max-width: 100px;
 }
 .menu__primaire .menu {
   list-style-type: none;
