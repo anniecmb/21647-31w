@@ -1,5 +1,21 @@
 .site__branding {
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
     text-align: center;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding-block: 20px;
+
+        // img {
+        //     height: 50px;
+        //     object-fit: cover;
+        // }
+    }
 }
 
 .site__title {
