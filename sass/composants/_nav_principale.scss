@@ -6,10 +6,20 @@
     font-family: $police__main;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
 
     .logo * {
         max-height: 100px;
         max-width: 100px;
+
+        @media screen and (max-width: 700px) {
+            max-height: 50px;
+            max-width: 50px;
+        }
     }
 
     // ul
