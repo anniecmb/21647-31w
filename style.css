@@ -874,13 +874,22 @@ footer {
 
 .liste__cours {
   flex: 0 1 30%;
+  padding-bottom: 20px;
+}
+.liste__cours h2 {
+  text-align: center;
 }
 
 .accueil__cours {
   display: flex;
+  flex-wrap: wrap;
 }
 .accueil__cours article {
   width: 50%;
+  padding-bottom: 20px;
+}
+.accueil__cours article h2 {
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
