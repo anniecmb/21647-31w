@@ -57,12 +57,14 @@
 		"footer";
 	
 	@media screen and (min-width : 700px) {
+
+		grid-template-columns: 370px auto;
 		grid-template-areas:
-			"header header"
-			"menu main"
-			"sidebar main"
-			". main"
-			"footer footer";
+		"header header"
+		"menu main"
+		"sidebar main"
+		". main"
+		"footer footer";
 	}
 }
 
