@@ -52,19 +52,23 @@ return $titre;
                 <?php if ( has_post_thumbnail() ) { ?>
                     <div class="thumbnail">
                         <?php the_post_thumbnail('thumbnail'); ?>
-                        <div><?php echo filtre_description_cours(get_the_content()) ?></div>
+                        <div>
+                            <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
+                            <h3>Professeur: <?php the_field('professeur'); ?></h3>
+                            <h4>Durée du cours: <?php the_field('duree') ?>h</h4>
+                            <h4>Suis-je inscris à ce cours: <?php
+                                if( get_field('je_participe') ) {
+                                    echo "Oui";
+                                } else {
+                                    echo "Non";
+                                }?></h4>
+                        </div>
                     </div>
                 <?php } ?>
 
-                <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
-                <h3>Professeur: <?php the_field('professeur'); ?></h3>
-                <h4>Durée du cours: <?php the_field('duree') ?>h</h4>
-                <h4>Suis-je inscris à ce cours: <?php
-                    if( get_field('je_participe') ) {
-                        echo "Oui";
-                    } else {
-                        echo "Non";
-                    }?></h4>
+                <?php echo filtre_description_cours(get_the_content()) ?>
+
+
             </article>
                 <?php endwhile; ?>
             <?php endif; ?>
