@@ -24,16 +24,18 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site__header">
-		
+		<nav class="menu__primaire">
 		<!-- affichage du menu principal -->
+		<div class="logo"><?= get_custom_logo(); ?></div>
 		<?php wp_nav_menu(array(
 			"menu" => "primaire",
-			"container" => "nav",
-			"container_class" => "menu__primaire"));
+			"container" => "",
+			"container_class" => ""));
 		?>
+		</nav>
 
 		<div class="site__branding">
-		<div class="logo"><?= get_custom_logo(); ?></div>
+		<!-- <div class="logo"><?= get_custom_logo(); ?></div> -->
 			<h1 class="site__title">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </h1>
