@@ -33,6 +33,7 @@
 		?>
 
 		<div class="site__branding">
+		<div class="logo"><?= get_custom_logo(); ?></div>
 			<h1 class="site__title">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </h1>
