@@ -2,8 +2,15 @@
 .menu__primaire {
 
     background-color: $couleur__nav--primaire;
-    padding: 20px;
+    padding: 20px 50px;
     font-family: $police__main;
+    display: flex;
+    justify-content: space-between;
+
+    .logo * {
+        max-height: 100px;
+        max-width: 100px;
+    }
 
     // ul
     .menu {
