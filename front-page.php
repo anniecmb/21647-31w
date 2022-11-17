@@ -37,14 +37,25 @@ return $titre;
             "menu"=>"evenement",
             "container"=>"nav",
             "container_class"=>"menu__evenement"
-        ));
+        )); ?>
 
-		if ( have_posts() ) :
-            while ( have_posts() ) :
-				the_post(); // récupère l'enregistrement complet (page ou article)
+        <section class="accueil__cours">
+        
+		<?php if ( have_posts() ) :
+            while ( have_posts() ) : ?>
+            <article>
+				<?php the_post(); // récupère l'enregistrement complet (page ou article)
                 // the_title('<h2>','</h2>');?>
                 <h2><a href="<?php the_permalink() ?>">
                 <?php echo filtre_titre_cours(get_the_title()) ?></a></h2>
+
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <div class="thumbnail">
+                        <?php the_post_thumbnail('thumbnail'); ?>
+                        <div><?php echo filtre_description_cours(get_the_content()) ?></div>
+                    </div>
+                <?php } ?>
+
                 <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
                 <h3>Professeur: <?php the_field('professeur'); ?></h3>
                 <h4>Durée du cours: <?php the_field('duree') ?>h</h4>
@@ -54,10 +65,11 @@ return $titre;
                     } else {
                         echo "Non";
                     }?></h4>
-                <!-- <?php the_content(null, true); ?> -->
-                <?php echo filtre_description_cours(get_the_content()) ?>
+            </article>
                 <?php endwhile; ?>
             <?php endif; ?>
+        </section>
+
         </main>    
 <?php get_footer(); ?>
 </html>
