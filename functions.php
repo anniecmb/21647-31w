@@ -102,8 +102,7 @@ add_filter("wp_nav_menu_objects", "igc31w_filtre_choix_menu", 10, 2);
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        // '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"><i class="fa-regular fa-calendar-days"></i></div></a>',
               $item_output );
     }
     return $item_output;
