@@ -546,7 +546,7 @@ textarea {
 }
 
 hr {
-  background-color: rgb(91, 255, 85);
+  background-color: rgb(0, 0, 0);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -590,6 +590,15 @@ img {
 
 figure {
   margin: 1em 0;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.thumbnail img {
+  padding-right: 20px;
 }
 
 .menu__primaire {
@@ -721,6 +730,11 @@ aside h2 {
 .site__branding {
   text-align: center;
 }
+.site__branding .logo {
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+}
 
 .site__title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -757,6 +771,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  margin: 0;
 }
 
 .menu__evenement .menu-item {
@@ -769,6 +784,7 @@ footer {
 
 .evenement__porte {
   background-color: rgba(196, 255, 100, 0.3);
+  background-color: rgba(255, 193, 7, 0.3);
 }
 .evenement__porte a {
   color: black;
@@ -780,6 +796,7 @@ footer {
 
 .evenement__porte:hover {
   background-color: rgba(196, 255, 100, 0.7);
+  background-color: rgba(255, 193, 7, 0.7);
 }
 .evenement__porte:hover .menu__item__icone {
   transform: scale(1.5);
@@ -788,6 +805,7 @@ footer {
 
 .evenement__projet {
   background-color: rgba(184, 255, 70, 0.3);
+  background-color: rgba(0, 150, 136, 0.3);
 }
 .evenement__projet a {
   color: black;
@@ -799,6 +817,7 @@ footer {
 
 .evenement__projet:hover {
   background-color: rgba(184, 255, 70, 0.7);
+  background-color: rgba(0, 150, 136, 0.7);
 }
 .evenement__projet:hover .menu__item__icone {
   transform: scale(1.5);
@@ -807,6 +826,8 @@ footer {
 
 .evenement__stage {
   background-color: rgba(157, 255, 0, 0.3);
+  background-color: rgba(255, 235, 59, 0.3);
+  margin-inline: 20px;
 }
 .evenement__stage a {
   color: black;
@@ -818,6 +839,7 @@ footer {
 
 .evenement__stage:hover {
   background-color: rgba(157, 255, 0, 0.7);
+  background-color: rgba(255, 235, 59, 0.7);
 }
 .evenement__stage:hover .menu__item__icone {
   transform: scale(1.5);
@@ -832,6 +854,17 @@ footer {
   padding-block: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .menu__evenement .menu {
+    display: block;
+  }
+  .menu__evenement .menu .menu-item {
+    margin-bottom: 20px;
+  }
+  .evenement__stage {
+    margin-inline: 0;
+  }
+}
 .liste {
   display: flex;
   flex-direction: row;
@@ -843,6 +876,24 @@ footer {
   flex: 0 1 30%;
 }
 
+.accueil__cours {
+  display: flex;
+}
+.accueil__cours article {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .liste {
+    display: block;
+  }
+  .accueil__cours {
+    display: block;
+  }
+  .accueil__cours article {
+    width: 100%;
+  }
+}
 .site__header {
   grid-area: header;
 }
@@ -900,7 +951,6 @@ footer {
 }
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */
