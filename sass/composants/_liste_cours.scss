@@ -14,13 +14,24 @@
     }
 }
 
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+    .liste__cours {
+        flex: 0 1 50%;
+        padding-bottom: 20px;
+    
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
 .accueil__cours {
     display: flex;
     flex-wrap: wrap;
 
     article {
         width: 50%;
-        padding-bottom: 20px;
+        padding: 20px;
 
         h2 {
             text-align: center;
