@@ -9,3 +9,25 @@
     flex: 0 1 30%;
 }
 
+.accueil__cours {
+    display: flex;
+
+    article {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .liste {
+        display: block;
+    }
+    
+    .accueil__cours {
+        display: block;
+
+        article {
+            width: 100%;
+        }
+    }
+}
