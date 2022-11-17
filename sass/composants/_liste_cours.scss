@@ -7,13 +7,24 @@
 
 .liste__cours {
     flex: 0 1 30%;
+    padding-bottom: 20px;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .accueil__cours {
     display: flex;
+    flex-wrap: wrap;
 
     article {
         width: 50%;
+        padding-bottom: 20px;
+
+        h2 {
+            text-align: center;
+        }
     }
 }
 
@@ -22,7 +33,7 @@
     .liste {
         display: block;
     }
-    
+
     .accueil__cours {
         display: block;
 
