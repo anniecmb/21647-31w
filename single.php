@@ -29,10 +29,24 @@ return $titre;
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post(); 
-                // the_title('<h2>','</h2>');
+				the_post(); ?>
+
+                <?php
+                $monTableau = get_the_category();
+                $boolGalerie = false;
+                foreach($monTableau as $cle) {
+                    if ($cle->slug == "galerie") {
+                        $boolGalerie = true;
+                    }
+                }
                 ?>
-                <h2><?php echo filtre_titre_cours(get_the_title()) ?></h2>
+
+                <h2><?php if ($boolGalerie == true) {
+                    the_title();
+                } else {
+                    echo filtre_titre_cours(get_the_title());
+                }?></h2>
+
                 <h3>Sigle du cours: <?php the_field('sigle') ?></h3>
                 <h3>Professeur: <?php the_field('professeur'); ?></h3>
                 <h4>Durée du cours: <?php the_field('duree') ?>h</h4>

@@ -12,6 +12,9 @@
  *
  * @package underscore
  */
+
+use function FortAwesome\fa;
+
 ?>
 
 <?php
@@ -43,11 +46,31 @@ return $titre;
         
 		<?php if ( have_posts() ) :
             while ( have_posts() ) : ?>
-            <article>
-				<?php the_post(); // récupère l'enregistrement complet (page ou article)
-                // the_title('<h2>','</h2>');?>
+            
+            <article class="<?php if ($boolGalerie = true) echo $class; ?>">
+
+                <?php the_post(); // récupère l'enregistrement complet (page ou article); ?>
+
+                <?php
+                $monTableau = get_the_category();
+                // echo "<pre>";print_r($monTableau);echo"</pre>";
+                $boolGalerie = false;
+                foreach($monTableau as $cle) {
+                    if ($cle->slug == "galerie") {
+                        $boolGalerie = true;
+                        $class = "galerie-largeur";
+                    }
+                }
+                ?>
+
                 <h2><a href="<?php the_permalink() ?>">
-                <?php echo filtre_titre_cours(get_the_title()) ?></a></h2>
+
+                <?php if ($boolGalerie == true) {
+                    the_title();
+                } else {
+                    echo filtre_titre_cours(get_the_title());
+                }
+                ?></a></h2>
 
                 <?php if ( has_post_thumbnail() ) { ?>
                     <div class="thumbnail">
@@ -66,7 +89,13 @@ return $titre;
                     </div>
                 <?php } ?>
 
-                <?php echo filtre_description_cours(get_the_content()) ?>
+                <?php
+                if ($boolGalerie == true) {
+                    the_content(null, true);
+                } else {
+                    echo filtre_description_cours(get_the_content(null, true));
+                }
+                ?>
 
 
             </article>
