@@ -18,6 +18,12 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>
+		.site__header {
+			background-color:<?= get_theme_mod("site__title__background"); ?>;
+		}
+	</style>
+
 </head>
 
 <body <?php body_class(); ?>>
