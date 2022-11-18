@@ -30,13 +30,17 @@
     flex-wrap: wrap;
 
     article {
-        width: 50%;
+        width: 100%;
         padding: 20px;
 
         h2 {
             text-align: center;
         }
     }
+}
+
+.accueil__cours .galerie-largeur {
+    width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -51,5 +55,9 @@
         article {
             width: 100%;
         }
+    }
+
+    .accueil__cours .galerie-largeur {
+        width: 100%;
     }
 }
