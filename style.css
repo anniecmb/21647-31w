@@ -365,6 +365,10 @@ p {
   background-color: #0f0;
 }
 
+header {
+  margin-bottom: 20px;
+}
+
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -938,11 +942,15 @@ footer {
   flex-wrap: wrap;
 }
 .accueil__cours article {
-  width: 50%;
+  width: 100%;
   padding: 20px;
 }
 .accueil__cours article h2 {
   text-align: center;
+}
+
+.accueil__cours .galerie-largeur {
+  width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -953,6 +961,9 @@ footer {
     display: block;
   }
   .accueil__cours article {
+    width: 100%;
+  }
+  .accueil__cours .galerie-largeur {
     width: 100%;
   }
 }
