@@ -39,6 +39,22 @@
     }
 }
 
+.accueil__cours_recherche {
+    display: flex;
+    flex-wrap: wrap;
+
+    article {
+        width: 100%;
+        padding-inline: 20px 0 20px 0;
+        margin-block: 20px;
+        text-align: left;
+
+        h2 {
+            text-align: left;
+        }
+    }
+}
+
 .accueil__cours .galerie-largeur {
     width: 50%;
 }
