@@ -41,16 +41,22 @@
 		</nav>
 
 		<div class="site__branding">
-		<!-- <div class="logo"><?= get_custom_logo(); ?></div> -->
-			<h1 class="site__title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-            </h1>
-        <?php
-			$underscore_description = get_bloginfo( 'description', 'display' );
-			if ( $underscore_description || is_customize_preview() ) :
-		?>
-				<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<div>
+				<!-- <div class="logo"><?= get_custom_logo(); ?></div> -->
+					<h1 class="site__title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</h1>
+				<?php
+					$underscore_description = get_bloginfo( 'description', 'display' );
+					if ( $underscore_description || is_customize_preview() ) :
+				?>
+						<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+					<?php endif; ?>
+			</div>
+			<div>
+				<div><?php get_sidebar( 'header-2-acmb' ); ?></div>
+				<div><?php get_sidebar( 'header-1-acmb' ); ?></div>
+			</div>
 		</div><!-- .site-branding -->
 
 
