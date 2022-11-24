@@ -2,9 +2,18 @@
 
     // display: flex;
     // justify-content: center;
-    // align-items: center;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     text-align: center;
+
+    padding-inline: 50px;
+
+    .entete__sidebars {
+        padding-top: 16px;
+    }
 
     .logo {
         display: flex;
@@ -24,4 +33,8 @@
 
 .site__description {
     font-family: $police__main;
+}
+
+.wp-block-search__label {
+    display: flex;
 }

@@ -776,7 +776,14 @@ aside h2 {
 }
 
 .site__branding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  padding-inline: 50px;
+}
+.site__branding .entete__sidebars {
+  padding-top: 16px;
 }
 .site__branding .logo {
   display: flex;
@@ -790,6 +797,10 @@ aside h2 {
 
 .site__description {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.wp-block-search__label {
+  display: flex;
 }
 
 footer {
