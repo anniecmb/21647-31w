@@ -203,6 +203,35 @@ function my_register_sidebars() {
 		)
 	);
 	/* Repeat register_sidebar() code for additional sidebars. */
+
+
+	/* Register the 'header-1-acmb' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'header-1-acmb',
+			'name'          => __( 'Sidebar - header-1-acmb' ),
+			'description'   => __( 'Premier sidebar de l\'entête.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
+
+	/* Register the 'header-2-acmb' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'header-2-acmb',
+			'name'          => __( 'Sidebar - header-2-acmb' ),
+			'description'   => __( 'Deuxième sidebar de l\'entête.' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
 
