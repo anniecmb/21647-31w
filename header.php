@@ -53,7 +53,7 @@
 						<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 					<?php endif; ?>
 			</div>
-			<div>
+			<div class="entete__sidebars">
 				<div><?php get_sidebar( 'header-2-acmb' ); ?></div>
 				<div><?php get_sidebar( 'header-1-acmb' ); ?></div>
 			</div>
